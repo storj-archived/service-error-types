@@ -1,0 +1,25 @@
+{
+  "name": "storj-service-error-types",
+  "version": "1.0.0",
+  "description": "common error types for various storj services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Storj/service-error-types.git"
+  },
+  "keywords": [
+    "storj",
+    "bridge",
+    "service",
+    "errors"
+  ],
+  "author": "Gordon Hall <gordon@storj.io>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Storj/service-error-types/issues"
+  },
+  "homepage": "https://github.com/Storj/service-error-types#readme"
+}
