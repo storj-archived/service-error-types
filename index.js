@@ -55,3 +55,8 @@ module.exports.NotImplementedError = HTTPErrorFactory(
   501,
   'Not implemented'
 );
+
+module.exports.ServiceUnavailableError = HTTPErrorFactory(
+  503,
+  'Service Unavailable'
+);
