@@ -60,3 +60,8 @@ module.exports.ServiceUnavailableError = HTTPErrorFactory(
   503,
   'Service Unavailable'
 );
+
+module.exports.TransferRateError = HTTPErrorFactory(
+  420,
+  'Transfer rate limit'
+);
