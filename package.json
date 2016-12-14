@@ -1,6 +1,6 @@
 {
   "name": "storj-service-error-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "common error types for various storj services",
   "main": "index.js",
   "scripts": {
