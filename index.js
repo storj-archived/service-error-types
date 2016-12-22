@@ -20,6 +20,7 @@ function HTTPErrorFactory(code, defaultMessage) {
 
     assert(statusCode >= 400, 'Not a valid HTTP error code');
 
+    this.statusCode = statusCode;
     this.code = statusCode;
     this.message = message || defaultMessage;
   }
