@@ -32,6 +32,11 @@ function HTTPErrorFactory(code, defaultMessage) {
   return HTTPError.bind.apply(HTTPError, args);
 }
 
+module.exports.RateLimited = HTTPErrorFactory(
+  429,
+  'Request rate limited'
+);
+
 module.exports.NotFoundError = HTTPErrorFactory(
   404,
   'Resource not found'
