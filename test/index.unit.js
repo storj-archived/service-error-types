@@ -84,4 +84,13 @@ describe('errorTypes', function() {
       expect(TransferRateError.message).to.equal('Transfer rate limit');
     });
   });
+
+  describe('ConflictError', function () {
+    it('should have default props', function () {
+      var ConflictError = errorTypes.ConflictError();
+      expect(ConflictError.code).to.equal(409);
+      expect(ConflictError.statusCode).to.equal(409);
+      expect(ConflictError.message).to.equal('Conflict');
+    });
+  });
 });

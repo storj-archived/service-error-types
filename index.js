@@ -71,3 +71,9 @@ module.exports.TransferRateError = HTTPErrorFactory(
   420,
   'Transfer rate limit'
 );
+
+module.exports.ConflictError = HTTPErrorFactory(
+  409,
+  'Conflict'
+);
+
