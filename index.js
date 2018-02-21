@@ -47,6 +47,11 @@ module.exports.NotAuthorizedError = HTTPErrorFactory(
   'Not authorized'
 );
 
+module.exports.ForbiddenError = HTTPErrorFactory(
+  403,
+  'Forbidden'
+);
+
 module.exports.InternalError = HTTPErrorFactory(
   500,
   'Internal error'
