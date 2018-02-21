@@ -40,6 +40,15 @@ describe('errorTypes', function() {
     });
   });
 
+  describe('ForbiddenError', function () {
+    it('should have default props', function () {
+      var NotAuthorizedError = errorTypes.ForbiddenError();
+      expect(NotAuthorizedError.code).to.equal(403);
+      expect(NotAuthorizedError.statusCode).to.equal(403);
+      expect(NotAuthorizedError.message).to.equal('Forbidden');
+    });
+  });
+
   describe('InternalError', function () {
     it('should have default props', function () {
       var InternalError = errorTypes.InternalError();
