@@ -82,3 +82,7 @@ module.exports.ConflictError = HTTPErrorFactory(
   'Conflict'
 );
 
+module.exports.UnprocessableEntityError = HTTPErrorFactory(
+  422,
+  'Unprocessable entity'
+);

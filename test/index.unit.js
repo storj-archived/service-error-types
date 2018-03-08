@@ -102,4 +102,13 @@ describe('errorTypes', function() {
       expect(ConflictError.message).to.equal('Conflict');
     });
   });
+
+  describe('UnprocessableEntity', function () {
+    it('should have default props', function () {
+      var UnprocessableEntityError = errorTypes.UnprocessableEntityError();
+      expect(UnprocessableEntityError.code).to.equal(422);
+      expect(UnprocessableEntityError.statusCode).to.equal(422);
+      expect(UnprocessableEntityError.message).to.equal('Unprocessable entity');
+    });
+  });
 });
